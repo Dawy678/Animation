@@ -1,0 +1,61 @@
+/*  {
+    width: 720px;
+    height: 480px;
+    border: 2px solid black;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 300px;
+    margin-right: 20px;
+    animation: linear;
+}
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 50ms;
+    transform: translate(20deg);
+} */
+/* @keyframes powiekszanie {
+    from {
+        border: 2px solid black;
+        margin-top: 50px;
+        padding: 2px;
+        width: 500px;
+
+    }
+    to {
+        width: 100px;
+        height: 50px;
+    }
+} */
+/* .obrazek:hover {
+    animation-name: powiekszanie;
+    animation-duration: 10s;
+    animation-timing-function: ease-out;
+} */
+body {
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.box {
+    overflow: hidden;
+    width: 500px;
+    height: 250px;
+    box-sizing: border-box;
+}
+img {
+    height: 100%;
+    width: 100%;
+}
+img:hover {
+    transform: scale(1.5);
+}
