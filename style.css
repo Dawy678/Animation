@@ -41,11 +41,11 @@ div {
     animation-duration: 10s;
     animation-timing-function: ease-out;
 } */
-body {
+/* body {
     background-image: url(1.jpg);
     background-repeat: no-repeat;
     background-position: left top;
-}
+} */
 .box {
     overflow: hidden;
     width: 500px;
@@ -55,7 +55,18 @@ body {
 img {
     height: 100%;
     width: 100%;
+    animation-fill-mode: forwards;
 }
 img:hover {
-    transform: scale(1.5);
+    animation-name: przyblizenie;
+    animation-duration: 2000ms;
+}
+@keyframes przyblizenie {
+    from {
+        height: 100%;
+        width: 100%;
+    }
+    to {
+        transform: scale(1.5);
+    }
 }
